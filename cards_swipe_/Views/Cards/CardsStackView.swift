@@ -14,7 +14,6 @@ struct CardsStackView: View {
     private var cardsStackDimensionCalculator
 
     @Bindable var store: StoreOf<CardsStackReducer>
-    @Binding var isRecording: Bool
 
     var body: some View {
         ZStack {
@@ -24,8 +23,10 @@ struct CardsStackView: View {
                 CardView(question: question,
                          color: question.color,
                          onSwipe: { question in
-                            store.send(.swipeQuestion(question), animation: .default)
-                        })
+                            store.send(.swipeQuestion(question), animation: .default)},
+                         onTap: { question in
+                    store.send(.showQuestionDetails(question))
+                })
                 .frame(width: cardWidth, height: 170)
                 .offset(x: 0, y: -cardsStackDimensionCalculator.getCardOffset(
                     index: question.index)
@@ -42,14 +43,10 @@ struct CardsStackView: View {
         .onAppear {
             store.send(.fetchQuestions)
         }
-        .onChange(of: isRecording) {
-            store.send(.setIsRecording(isRecording))
-        }
     }
 }
 
  #Preview {
     CardsStackView(store: Store(initialState: CardsStackReducer.State(),
-                                reducer: { CardsStackReducer() }),
-                   isRecording: Binding.constant(true))
+                                reducer: { CardsStackReducer() }))
  }
