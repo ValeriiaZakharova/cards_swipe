@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct cards_swipe_App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CardsView(store: Store(initialState: CardsReducer.State()) {
+                CardsReducer()
+            })
         }
     }
 }
