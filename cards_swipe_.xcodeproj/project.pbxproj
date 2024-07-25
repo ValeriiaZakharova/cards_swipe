@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		835A374C2C527ACE00F141D5 /* cards_swipe_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A374B2C527ACE00F141D5 /* cards_swipe_App.swift */; };
-		835A374E2C527ACE00F141D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A374D2C527ACE00F141D5 /* ContentView.swift */; };
 		835A37502C527AD000F141D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835A374F2C527AD000F141D5 /* Assets.xcassets */; };
 		835A37532C527AD000F141D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835A37522C527AD000F141D5 /* Preview Assets.xcassets */; };
 		835A375B2C527DB200F141D5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A375A2C527DB200F141D5 /* CardView.swift */; };
 		835A375E2C527DE700F141D5 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A375D2C527DE700F141D5 /* QuestionViewModel.swift */; };
 		835A37612C527F9700F141D5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 835A37602C527F9700F141D5 /* ComposableArchitecture */; };
+		835A37652C52AA8900F141D5 /* CardsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A37642C52AA8900F141D5 /* CardsReducer.swift */; };
+		835A37672C52AAA100F141D5 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A37662C52AAA100F141D5 /* CardsView.swift */; };
+		835A37692C52AB8B00F141D5 /* CardsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A37682C52AB8B00F141D5 /* CardsStackView.swift */; };
+		835A376C2C52ABBD00F141D5 /* CardsStackDimensionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A376B2C52ABBD00F141D5 /* CardsStackDimensionCalculator.swift */; };
+		835A376F2C52AC3A00F141D5 /* CardsStackReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A376E2C52AC3A00F141D5 /* CardsStackReducer.swift */; };
+		835A37732C52BC6100F141D5 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A37722C52BC6100F141D5 /* DetailsView.swift */; };
+		835A37752C52BC6E00F141D5 /* DetailsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A37742C52BC6E00F141D5 /* DetailsReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		835A37482C527ACE00F141D5 /* cards_swipe_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cards_swipe_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		835A374B2C527ACE00F141D5 /* cards_swipe_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cards_swipe_App.swift; sourceTree = "<group>"; };
-		835A374D2C527ACE00F141D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		835A374F2C527AD000F141D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		835A37522C527AD000F141D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		835A375A2C527DB200F141D5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		835A375D2C527DE700F141D5 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		835A37642C52AA8900F141D5 /* CardsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsReducer.swift; sourceTree = "<group>"; };
+		835A37662C52AAA100F141D5 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+		835A37682C52AB8B00F141D5 /* CardsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsStackView.swift; sourceTree = "<group>"; };
+		835A376B2C52ABBD00F141D5 /* CardsStackDimensionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsStackDimensionCalculator.swift; sourceTree = "<group>"; };
+		835A376E2C52AC3A00F141D5 /* CardsStackReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsStackReducer.swift; sourceTree = "<group>"; };
+		835A37722C52BC6100F141D5 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		835A37742C52BC6E00F141D5 /* DetailsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +69,11 @@
 		835A374A2C527ACE00F141D5 /* cards_swipe_ */ = {
 			isa = PBXGroup;
 			children = (
-				835A374B2C527ACE00F141D5 /* cards_swipe_App.swift */,
+				835A37702C52B6B300F141D5 /* App */,
+				835A376A2C52ABAB00F141D5 /* Helpers */,
+				835A37622C52AA5500F141D5 /* Scenes */,
 				835A375C2C527DD800F141D5 /* Models */,
 				835A37592C527D9A00F141D5 /* Views */,
-				835A374D2C527ACE00F141D5 /* ContentView.swift */,
 				835A374F2C527AD000F141D5 /* Assets.xcassets */,
 				835A37512C527AD000F141D5 /* Preview Content */,
 			);
@@ -78,7 +91,7 @@
 		835A37592C527D9A00F141D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				835A375A2C527DB200F141D5 /* CardView.swift */,
+				835A376D2C52AC0700F141D5 /* Cards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,6 +102,59 @@
 				835A375D2C527DE700F141D5 /* QuestionViewModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		835A37622C52AA5500F141D5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				835A37712C52BC4C00F141D5 /* Details */,
+				835A37632C52AA6E00F141D5 /* CardsViewScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		835A37632C52AA6E00F141D5 /* CardsViewScene */ = {
+			isa = PBXGroup;
+			children = (
+				835A37642C52AA8900F141D5 /* CardsReducer.swift */,
+				835A37662C52AAA100F141D5 /* CardsView.swift */,
+			);
+			path = CardsViewScene;
+			sourceTree = "<group>";
+		};
+		835A376A2C52ABAB00F141D5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				835A376B2C52ABBD00F141D5 /* CardsStackDimensionCalculator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		835A376D2C52AC0700F141D5 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				835A376E2C52AC3A00F141D5 /* CardsStackReducer.swift */,
+				835A37682C52AB8B00F141D5 /* CardsStackView.swift */,
+				835A375A2C527DB200F141D5 /* CardView.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		835A37702C52B6B300F141D5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				835A374B2C527ACE00F141D5 /* cards_swipe_App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		835A37712C52BC4C00F141D5 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				835A37722C52BC6100F141D5 /* DetailsView.swift */,
+				835A37742C52BC6E00F141D5 /* DetailsReducer.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +233,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				835A374E2C527ACE00F141D5 /* ContentView.swift in Sources */,
+				835A376C2C52ABBD00F141D5 /* CardsStackDimensionCalculator.swift in Sources */,
+				835A37692C52AB8B00F141D5 /* CardsStackView.swift in Sources */,
+				835A37732C52BC6100F141D5 /* DetailsView.swift in Sources */,
+				835A376F2C52AC3A00F141D5 /* CardsStackReducer.swift in Sources */,
 				835A375B2C527DB200F141D5 /* CardView.swift in Sources */,
+				835A37652C52AA8900F141D5 /* CardsReducer.swift in Sources */,
 				835A375E2C527DE700F141D5 /* QuestionViewModel.swift in Sources */,
+				835A37752C52BC6E00F141D5 /* DetailsReducer.swift in Sources */,
 				835A374C2C527ACE00F141D5 /* cards_swipe_App.swift in Sources */,
+				835A37672C52AAA100F141D5 /* CardsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

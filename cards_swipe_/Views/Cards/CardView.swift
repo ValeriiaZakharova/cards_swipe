@@ -15,6 +15,7 @@ struct CardView: View {
     let question: QuestionViewModel
     let color: Color
     let onSwipe: (_ question: QuestionViewModel) -> Void
+    let onTap: (_ question: QuestionViewModel) -> Void
 
     private var isTopCard: Bool {
         question.index == 0
@@ -54,6 +55,9 @@ struct CardView: View {
                     }
                 }
         )
+        .onTapGesture {
+            onTap(question)
+        }
     }
 
     private func swipeCard(width: CGFloat, cardWidth: CGFloat) {
@@ -73,5 +77,9 @@ struct CardView: View {
         text: "When did you feel excited and inspired while working?"),
                                          color: .black,
                                          index: 1),
-             color: .black) { _ in }
+             color: .black,
+             onSwipe: { _ in },
+             onTap: { _ in
+                 print("Card tapped")
+             })
 }
