@@ -31,7 +31,7 @@ struct CardsView: View {
                 Spacer()
             }
             .onAppear {
-                // TODO: implement fetching date
+                // TODO: implement fetching data
             }
             .alert($store.scope(state: \.alert, action: \.alert))
             .navigationDestination(
