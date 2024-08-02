@@ -20,6 +20,7 @@
 		835A376F2C52AC3A00F141D5 /* CardsStackReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A376E2C52AC3A00F141D5 /* CardsStackReducer.swift */; };
 		835A37732C52BC6100F141D5 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A37722C52BC6100F141D5 /* DetailsView.swift */; };
 		835A37752C52BC6E00F141D5 /* DetailsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A37742C52BC6E00F141D5 /* DetailsReducer.swift */; };
+		835A37772C538D5D00F141D5 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A37762C538D5D00F141D5 /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		835A376E2C52AC3A00F141D5 /* CardsStackReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsStackReducer.swift; sourceTree = "<group>"; };
 		835A37722C52BC6100F141D5 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		835A37742C52BC6E00F141D5 /* DetailsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsReducer.swift; sourceTree = "<group>"; };
+		835A37762C538D5D00F141D5 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				835A375D2C527DE700F141D5 /* QuestionViewModel.swift */,
+				835A37762C538D5D00F141D5 /* Country.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				835A375B2C527DB200F141D5 /* CardView.swift in Sources */,
 				835A37652C52AA8900F141D5 /* CardsReducer.swift in Sources */,
 				835A375E2C527DE700F141D5 /* QuestionViewModel.swift in Sources */,
+				835A37772C538D5D00F141D5 /* Country.swift in Sources */,
 				835A37752C52BC6E00F141D5 /* DetailsReducer.swift in Sources */,
 				835A374C2C527ACE00F141D5 /* cards_swipe_App.swift in Sources */,
 				835A37672C52AAA100F141D5 /* CardsView.swift in Sources */,
